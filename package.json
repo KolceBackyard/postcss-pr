@@ -1,7 +1,7 @@
 {
-  "name": "postcss-pxrem",
+  "name": "postcss-pr",
   "version": "1.0.0",
-  "description": "PostCSS plugin that transforms px values to rem, using the pxrem unit",
+  "description": "PostCSS plugin that transforms px values to rem, using a pr unit",
   "keywords": [
     "postcss",
     "css",
@@ -9,13 +9,13 @@
     "px",
     "unit",
     "rem",
-    "pxrem"
+    "pr"
   ],
   "author": "James Kolce <contact@jameskolce.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jameskolce/postcss-pxrem.git"
+    "url": "https://github.com/jameskolce/postcss-pr.git"
   },
   "dependencies": {
     "postcss": "^5.0.21"

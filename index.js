@@ -4,16 +4,16 @@ const pxToRem = require('./lib/pxToRem');
 
 const defaults = {
   rootSelector: ':root',
-  unit: 'pxrem',
+  unit: 'pr',
   fontSize: 16
 };
 
-module.exports = postcss.plugin('postcss-pxrem', (opts = defaults) => {
+module.exports = postcss.plugin('postcss-pr', (opts = defaults) => {
   return (css) => {
     const rootFontSize = getRootSize(css, opts) || opts.fontSize;
-    const pxremReg = new RegExp('\\d*\\.?\\d+' + opts.unit, 'gi');
+    const prReg = new RegExp('\\d*\\.?\\d+' + opts.unit, 'gi');
 
-    css.replaceValues(pxremReg, {fast: opts.unit}, (val) => {
+    css.replaceValues(prReg, {fast: opts.unit}, (val) => {
       return pxToRem(parseFloat(val), rootFontSize);
     });
   };
