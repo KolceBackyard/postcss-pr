@@ -1,0 +1,10 @@
+:root { font: 14px/1.64286 Arial; }
+p { 
+	margin: 1.64286rem auto; 
+	line-height: 1.64286rem;
+}
+ul { 
+	margin-top: 23px; 
+	margin-bottom: 23px;
+}
+li { font-size: 1.28571rem; }
