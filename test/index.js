@@ -25,5 +25,15 @@ test('units', (t) => {
     expected('test2'),
     'should be transformed with a font-size declaration');
 
+  t.equal(
+    actual('test3'),
+    expected('test3'),
+    'should strip opening/closing parentheses and px unit');
+	
+  t.equal(
+    actual('test4'),
+    expected('test4'),
+    'should strip opening/closing parentheses and "px" unit only from values that are appended with "pr"');
+
   t.end();
 });
