@@ -1,4 +1,4 @@
-# postcss-pr [![Build Status](https://travis-ci.org/KolceThompsonCo/postcss-pr.svg?branch=master)](https://travis-ci.org/KolceThompsonCo/postcss-pr)
+# postcss-pr [![Build Status](https://travis-ci.org/jameskolce/postcss-pr.svg?branch=master)](https://travis-ci.org/jameskolce/postcss-pr)
 
 PostCSS plugin that defines a `pr` unit that transforms a value in px to output its equivalent in rem.
 
